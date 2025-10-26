@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# fluxbox startup-script
+
+# Set background
+~/.fehbg &
+
+# Start tint2 panel
+tint2 &
+
+picom &
+
+
+exec fluxbox

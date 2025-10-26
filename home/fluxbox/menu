@@ -1,0 +1,88 @@
+[begin] (Fluxbox)
+
+   [exec] (Terminal) {st} <>
+   [exec] (Browser) {librewolf} <>
+   [exec] (File Manager) {thunar} <>
+   
+   [separator]
+   
+   [submenu] (Internet) {}
+      [exec] (Librewolf) {librewolf} <>
+      [exec] (Firefox ESR) {firefox-esr} <>
+      [exec] (Thunderbird) {thunderbird} <>
+      [exec] (Transmission) {transmission-gtk} <>
+   [end]
+   
+   [submenu] (Graphics) {}
+      [exec] (GIMP) {gimp} <>
+      [exec] (Inkscape) {inkscape} <>
+      [exec] (Ristretto) {ristretto} <>
+      [exec] (gpick) {gpick} <>
+   [end]
+   
+   [submenu] (Files) {}
+      [exec] (Thunar) {thunar} <>
+      [exec] (PCManFM) {pcmanfm} <>
+      [exec] (Thunar Root) {pkexec thunar} <>
+   [end]
+   
+   [submenu] (Editors) {}
+      [exec] (Geany) {geany} <>
+      [exec] (Mousepad) {mousepad} <>
+      [exec] (Vim) {st -e vim} <>
+      [exec] (Nano) {st -e nano} <>
+   [end]
+   
+   [submenu] (Media) {}
+      [exec] (Audacious) {audacious} <>
+      [exec] (VLC) {vlc} <>
+      [exec] (MPV) {mpv} <>
+      [exec] (PulseAudio Volume Control) {pavucontrol} <>
+      [exec] (Alsamixer) {st -e alsamixer} <>
+   [end]
+   
+   [submenu] (Office) {}
+      [exec] (LibreOffice Writer) {libreoffice --writer} <>
+      [exec] (LibreOffice Calc) {libreoffice --calc} <>
+      [exec] (LibreOffice Impress) {libreoffice --impress} <>
+      [exec] (LibreOffice Draw) {libreoffice --draw} <>
+      [exec] (Evince PDF) {evince} <>
+      [exec] (Atril PDF) {atril} <>
+   [end]
+   
+   [submenu] (Utilities) {}
+      [exec] (Calculator) {gnome-calculator} <>
+      [exec] (Character Map) {gucharmap} <>
+      [exec] (Archive Manager) {file-roller} <>
+      [exec] (Htop) {st -e htop} <>
+   [end]
+   
+   [submenu] (System) {}
+      [exec] (Task Manager) {lxtask} <>
+      [exec] (GParted) {pkexec gparted} <>
+      [exec] (Synaptic) {pkexec synaptic} <>
+      [exec] (Network Manager) {nm-connection-editor} <>
+   [end]
+   
+   [separator]
+   
+   [submenu] (Fluxbox Settings) {}
+      [config] (Configure)
+      [submenu] (Styles) {}
+         [stylesdir] (~/.fluxbox/styles)
+         [stylesdir] (/usr/share/fluxbox/styles)
+      [end]
+      [workspaces] (Workspaces)
+      [commanddialog] (Run Command)
+      [reconfig] (Reload Config)
+      [restart] (Restart Fluxbox)
+   [end]
+   
+   [separator]
+   
+   [exec] (Lock Screen) {xscreensaver-command -lock} <>
+   [exec] (Reboot) {systemctl reboot} <>
+   [exec] (Power Off) {systemctl poweroff} <>
+   [exit] (Logout)
+
+[end]

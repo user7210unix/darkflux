@@ -1,0 +1,78 @@
+! myDEFCON_2 Color Scheme for URxvt/ST
+
+! Font settings
+URxvt.font: xft:Terminus:size=12:antialias=true
+URxvt.boldFont: xft:Terminus:size=12:bold:antialias=true
+URxvt.letterSpace: 0
+
+! Scrollbar
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+
+! Color scheme - myDEFCON_2 theme colors
+! Dark grey background with light grey text
+URxvt.background: #1e1e1e
+URxvt.foreground: #e7e7e7
+
+! Cursor
+URxvt.cursorColor: #fdb927
+URxvt.cursorColor2: #1e1e1e
+URxvt.cursorBlink: false
+
+! Border
+URxvt.internalBorder: 8
+URxvt.externalBorder: 0
+URxvt.borderColor: #1e1e1e
+
+! Colors (matching myDEFCON_2 aesthetic)
+! Black
+*.color0:  #000000
+*.color8:  #343434
+
+! Red
+*.color1:  #cd5c5c
+*.color9:  #ff6b6b
+
+! Green
+*.color2:  #8fbc8f
+*.color10: #9acd32
+
+! Yellow/Gold (matching the accent)
+*.color3:  #fdb927
+*.color11: #ffd700
+
+! Blue
+*.color4:  #6495ed
+*.color12: #87ceeb
+
+! Magenta
+*.color5:  #ba55d3
+*.color13: #da70d6
+
+! Cyan
+*.color6:  #5f9ea0
+*.color14: #7fffd4
+
+! White/Grey
+*.color7:  #e7e7e7
+*.color15: #ffffff
+
+! URL handling
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: librewolf
+URxvt.matcher.button: 1
+URxvt.underlineURLs: true
+
+! Copy/Paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Disable scrollback buffer on output
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+
+! Save more lines
+URxvt.saveLines: 10000

@@ -1,0 +1,92 @@
+configuration {
+    modi: "drun,run,window";
+    font: "Terminus 12";
+    show-icons: false;
+    display-drun: "Run:";
+    display-run: "Run:";
+    display-window: "Window:";
+    drun-display-format: "{name}";
+    sidebar-mode: false;
+    location: 0;
+    width: 100;
+    lines: 10;
+}
+
+* {
+    background-color: #1e1e1e;
+    text-color: #ffffff;
+    border-color: #343434;
+    selected-normal-background: #111112;
+    selected-normal-foreground: #cccccc;
+}
+
+window {
+    background-color: @background-color;
+    border: 1px;
+    border-color: @border-color;
+    padding: 5px;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+}
+
+message {
+    border: 0;
+    padding: 5px;
+}
+
+textbox {
+    text-color: @text-color;
+}
+
+listview {
+    fixed-height: false;
+    border: 0;
+    padding: 2px 0px 0px;
+    scrollbar: false;
+}
+
+element {
+    border: 0;
+    padding: 2px;
+}
+
+element normal.normal {
+    background-color: @background-color;
+    text-color: @text-color;
+}
+
+element selected.normal {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+
+element alternate.normal {
+    background-color: @background-color;
+    text-color: @text-color;
+}
+
+inputbar {
+    spacing: 0;
+    text-color: @text-color;
+    padding: 2px;
+    border: 1px;
+    border-color: @border-color;
+}
+
+case-indicator {
+    spacing: 0;
+    text-color: @text-color;
+}
+
+entry {
+    spacing: 0;
+    text-color: @text-color;
+}
+
+prompt {
+    spacing: 0;
+    text-color: @text-color;
+}
