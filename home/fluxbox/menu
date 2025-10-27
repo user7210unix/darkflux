@@ -30,7 +30,7 @@
       [exec] (Geany) {geany} <>
       [exec] (Mousepad) {mousepad} <>
       [exec] (Vim) {st -e vim} <>
-      [exec] (Nano) {st -e nano} <>
+      [exec] (Emacs) {emacs} <>
    [end]
    
    [submenu] (Media) {}
