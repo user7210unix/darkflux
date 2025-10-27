@@ -1,0 +1,35 @@
+# Background definitions
+background_color = #1e1e1e 100
+border_color = #343434 100
+background_color_hover = #343434 100
+border_width = 1
+
+# Panel
+panel_position = bottom center horizontal
+panel_size = 100% 28
+panel_monitor = all
+panel_background_id = 1
+
+# Taskbar
+taskbar_mode = single_desktop
+taskbar_padding = 2 2 2
+taskbar_background_id = 1
+
+# Tasks
+task_background_id = 1
+task_text = 1
+task_font = Terminus 12
+task_font_color = #ffffff 100
+task_padding = 4 2
+
+# System tray
+systray_padding = 2 2 2
+systray_background_id = 1
+systray_monitor = 1
+
+# Clock
+time1_format = %H:%M
+time1_font = Terminus 12
+clock_font_color = #cccccc 100
+clock_padding = 4 2
+clock_background_id = 1
